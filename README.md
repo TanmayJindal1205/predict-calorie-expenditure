@@ -1,49 +1,223 @@
 # Predict Calorie Expenditure
 
-An end-to-end Machine Learning pipeline for predicting calorie expenditure using biometric and physiological data, featuring advanced feature engineering, model benchmarking, and ensemble learning techniques.
+An end-to-end Machine Learning pipeline for predicting calorie expenditure using biometric and physiological data. The project leverages advanced feature engineering, ensemble learning, and deep learning techniques to model complex relationships between exercise attributes and energy expenditure.
+
+---
+
+## Project Overview
+
+Accurately estimating calories burned during physical activity is important for fitness tracking, health monitoring, and personalized workout planning. Traditional estimation methods often struggle to capture complex physiological interactions.
+
+This project develops and evaluates multiple Machine Learning and Deep Learning models to predict calorie expenditure using demographic, biometric, and exercise-related attributes. The solution includes extensive exploratory data analysis, feature engineering, model benchmarking, and performance evaluation.
+
+---
 
 ## Dataset
 
-- Training Samples: 750,000
-- Test Samples: 250,000
+| Metric | Value |
+|----------|----------|
+| Training Samples | 750,000 |
+| Test Samples | 250,000 |
+| Original Features | 7 |
+| Engineered Features | 11 |
+| Total Features Used | 18 |
+
+### Input Features
+
+- Age
+- Gender
+- Height
+- Weight
+- Duration
+- Heart Rate
+- Body Temperature
+
+### Target Variable
+
+- Calories Burned
+
+---
+
+## Project Workflow
+
+```text
+Raw Data
+    ↓
+Data Cleaning
+    ↓
+Exploratory Data Analysis
+    ↓
+Feature Engineering
+    ↓
+Feature Scaling
+    ↓
+Model Training
+    ↓
+Model Evaluation
+    ↓
+Prediction
+```
+
+---
+
+## Exploratory Data Analysis
+
+Performed extensive exploratory analysis to understand feature distributions, correlations, and relationships with calorie expenditure.
+
+### Key Analyses
+
+- Correlation Heatmaps
+- Distribution Analysis
+- Outlier Detection
+- Feature Relationship Visualization
+- Target Variable Analysis
+
+---
+
+## Feature Engineering
+
+Domain-specific features were engineered to improve predictive performance and capture physiological relationships.
+
+### Engineered Features
+
+- Body Mass Index (BMI)
+- Heart Rate Zones
+- Age Groups
+- Duration × Heart Rate
+- Age × Weight
+- Additional physiological interaction features
+
+These transformations expanded the feature space from 7 raw attributes to 18 informative features.
+
+---
+
+## Models Evaluated
+
+The following models were trained and benchmarked:
+
+| Model |
+|---------|
+| Linear Regression |
+| ElasticNet Regression |
+| XGBoost Regressor |
+| LightGBM Regressor |
+| Deep Neural Network (TensorFlow) |
+
+---
+
+## Results
+
+### Best Performing Model
+
+**XGBoost Regressor**
+
+### Performance
+
+| Metric | Value |
+|----------|----------|
+| RMSE | 3.60 Calories |
+
+### Key Findings
+
+- Ensemble learning methods significantly outperformed linear models.
+- XGBoost achieved the best overall predictive performance.
+- Feature engineering substantially improved model accuracy.
+- Physiological interaction features contributed strongly to prediction quality.
+
+---
 
 ## Technologies Used
 
+### Programming Language
+
 - Python
-- Pandas
+
+### Libraries & Frameworks
+
 - NumPy
+- Pandas
+- Matplotlib
+- Seaborn
 - Scikit-Learn
 - TensorFlow
 - XGBoost
 - LightGBM
-- Matplotlib
-- Seaborn
 
-## Feature Engineering
+### Development Environment
 
-- BMI
-- Heart Rate Zones
-- Age Groups
-- Interaction Features
+- Jupyter Notebook
 
-## Models Evaluated
-
-- Linear Regression
-- ElasticNet
-- XGBoost
-- LightGBM
-- Deep Neural Network
-
-## Results
-
-Best Model: XGBoost
-
-RMSE: 3.60 Calories
+---
 
 ## Repository Structure
 
-notebooks/ - Jupyter notebook
+```text
+predict-calorie-expenditure/
+│
+├── notebooks/
+│   └── predict_calorie_expenditure.ipynb
+│
+├── reports/
+│   └── Project_Report.pdf
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-reports/ - Project report
+---
 
-requirements.txt - Dependencies
+## How to Run
+
+### Clone Repository
+
+```bash
+git clone https://github.com/TanmayJindal1205/predict-calorie-expenditure.git
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Launch Notebook
+
+```bash
+jupyter notebook
+```
+
+Open:
+
+```text
+notebooks/predict_calorie_expenditure.ipynb
+```
+
+---
+
+## Future Improvements
+
+- Hyperparameter Optimization
+- SHAP-based Explainability
+- Real-Time Prediction API
+- Streamlit Web Application
+- Integration with Fitness Tracking Platforms
+- Cloud Deployment
+
+---
+
+## Documentation
+
+Detailed project documentation is available in:
+
+```text
+reports/Project_Report.pdf
+```
+
+---
+
+## Author
+
+**Tanmay Jindal**
+
+Machine Learning • Deep Learning • Data Science
