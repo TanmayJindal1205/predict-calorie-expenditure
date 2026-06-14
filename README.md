@@ -1,6 +1,6 @@
 # Predict Calorie Expenditure
 
-A Machine Learning project for predicting calories burned during physical activity using biometric and physiological features.
+An end-to-end Machine Learning pipeline for predicting calorie expenditure using biometric and physiological data, featuring advanced feature engineering, model benchmarking, and ensemble learning techniques.
 
 ## Dataset
 
