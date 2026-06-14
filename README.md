@@ -64,6 +64,12 @@ Prediction
 
 Performed extensive exploratory analysis to understand feature distributions, correlations, and relationships with calorie expenditure.
 
+### Correlation Heatmap
+
+<img width="613" height="545" alt="img3" src="https://github.com/user-attachments/assets/f0d89364-9e26-4ff6-8df3-49d0ede89386" />
+
+The correlation heatmap highlights the relationships among physiological features and calorie expenditure, helping identify important predictors and guide feature engineering decisions.
+
 ### Key Analyses
 
 - Correlation Heatmaps
