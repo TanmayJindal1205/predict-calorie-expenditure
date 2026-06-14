@@ -117,6 +117,16 @@ The following models were trained and benchmarked:
 |----------|----------|
 | RMSE | 3.60 Calories |
 
+### Model Performance Comparison
+
+![Model Comparison](images/<img width="696" height="394" alt="img" src="https://github.com/user-attachments/assets/bbb5beb1-eb2b-4d34-a51a-2d083d22f017" />
+)
+
+### Performance Evaluation - Computational Overhead
+
+![Model Comparison](images/<img width="803" height="349" alt="img2" src="https://github.com/user-attachments/assets/9b750b34-22c7-4bf6-a7d2-29ed867f377a" />
+)
+
 ### Key Findings
 
 - Ensemble learning methods significantly outperformed linear models.
